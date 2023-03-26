@@ -10,7 +10,7 @@
 
 ## Pihole
 
-<http://ma.home.pihole.local>
+<http://ma.home.pihole.local/admin/login.php>
 
 ## CUPS
 
@@ -19,3 +19,7 @@
 ## Home Assistant
 
 <http://ma.home.assistant.local:8123>
+
+## Guacamole
+
+<>
