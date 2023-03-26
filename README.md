@@ -28,6 +28,11 @@ See: <https://docs.pi-hole.net/main/basic-install/>
 
 <http://ma.home.assistant.local:8123>
 
+### Install with Docker in LXC
+
+1. Install docker as described [below](#Docker-on-Proxmox-LXC)
+2. 
+
 ## Guacamole
 
 <>
