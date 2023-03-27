@@ -20,6 +20,16 @@ curl -sSL https://install.pi-hole.net | bash
 
 See: <https://docs.pi-hole.net/main/basic-install/>
 
+### Ads Lists
+
+- <https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/Phishing-Angriffe>
+- <https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/spam.mails>
+- <https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/malware>
+- <https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/Streaming>
+- <https://raw.githubusercontent.com/Monstanner/DuckDuckGo-Fakeshops-Blocklist/main/Blockliste>
+- <https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/easylist>
+- <https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt>
+
 ## CUPS
 
 <https://ma.home.airprint.local:631>
