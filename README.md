@@ -4,6 +4,18 @@
 
 <http://ma.heimdall.local>
 
+### Install Heimdall
+
+1. Install docker as described [below](#Docker-on-Proxmox-LXC)
+
+2. Install and run docker image
+
+```sh
+sudo docker run --name=heimdall -d -v /home/heimdall:/config -e PGID=1000 -e PUID=1000 -p 8080:80 -p 8443:443 linuxserver/heimdall
+```
+
+See: https://hub.docker.com/r/linuxserver/heimdall/
+
 ## Proxmox
 
 <https://ma.home.proxmox.local:8006>
