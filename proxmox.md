@@ -62,3 +62,7 @@ Sources:
 
 - <https://bobcares.com/blog/add-additional-drive-in-proxmox/>
 - <https://virtualizeeverything.com/2021/10/17/how-to-add-storage-dive-to-proxmox-7/>
+
+## How to SSH into your LXC
+
+- <https://forum.proxmox.com/threads/cannot-ssh-to-new-container.38114/>
