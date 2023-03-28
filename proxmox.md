@@ -65,4 +65,14 @@ Sources:
 
 ## How to SSH into your LXC
 
+```sh
+nano /etc/ssh/sshd_config
+```
+
+Change the line `PermitRootLogin without-password` to
+
+```txt
+PermitRootLogin yes
+```
+Afterwards, run `service sshd restart`
 - <https://forum.proxmox.com/threads/cannot-ssh-to-new-container.38114/>
