@@ -71,6 +71,7 @@ See: <https://www.home-assistant.io/installation/linux#install-home-assistant-co
 ## Wireguard
 
 - <https://www.youtube.com/watch?v=D1zp6n7ushM>
+- <https://pve.proxmox.com/wiki/OpenVPN_in_LXC>
 
 ## Docker on Proxmox LXC
 
