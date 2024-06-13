@@ -1,6 +1,4 @@
-# Proxmox
-
-## How to mount a new storage disk
+# How to mount a new storage disk
 
 1. Find out the drives available
 
@@ -25,6 +23,7 @@ parted /dev/<your-drive> mklabel gpt
 ```sh
 parted -a opt /dev/<your-drive> mkpart primary ext4 0% 100%
 ```
+
 5. Give the drive a name
 
 ```sh
@@ -48,6 +47,7 @@ nano /etc/fstab
 ```
 
 Add the entry
+
 ```txt
 LABEL=<your-drive-name> <mount-path> ext4 defaults 0 2
 ```
@@ -60,8 +60,8 @@ LABEL=myStorage /mnt/data ext4 defaults 0 2
 
 Sources:
 
-- <https://bobcares.com/blog/add-additional-drive-in-proxmox/>
-- <https://virtualizeeverything.com/2021/10/17/how-to-add-storage-dive-to-proxmox-7/>
+- [Add additional drive in proxmox](https://bobcares.com/blog/add-additional-drive-in-proxmox/)
+- [How to add storage drive to proxmox 7](https://virtualizeeverything.com/2021/10/17/how-to-add-storage-dive-to-proxmox-7/)
 
 ## How to SSH into your LXC
 
@@ -74,5 +74,7 @@ Change the line `PermitRootLogin without-password` to
 ```txt
 PermitRootLogin yes
 ```
+
 Afterwards, run `service sshd restart`
-- <https://forum.proxmox.com/threads/cannot-ssh-to-new-container.38114/>
+
+- [Cannot SSH to new container](https://forum.proxmox.com/threads/cannot-ssh-to-new-container.38114/)

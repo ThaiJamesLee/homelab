@@ -1,4 +1,4 @@
-# Pi Hole
+# Pi-Hole
 
 ## Install and setup
 
@@ -6,8 +6,7 @@
 curl -sSL https://install.pi-hole.net | bash
 ```
 
-See: <https://docs.pi-hole.net/main/basic-install/>
-
+See: [PiHole - Basic Install](https://docs.pi-hole.net/main/basic-install/)
 
 ## Configure
 
