@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   # Build job
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,15 +22,8 @@ jobs:
       - run: npm ci
       - run: npm run build
 
-  # Deploy job
-  deploy:
-    # Add a dependency to the build job
-    needs: build
-    # Specify runner + deployment step
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-    steps:
-      - name: Deploy 🚀
+      - name: Deploy
+        if: github.ref == 'refs/heads/main'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: build
