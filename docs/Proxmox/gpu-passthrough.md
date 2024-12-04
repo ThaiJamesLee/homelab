@@ -1,6 +1,6 @@
 # GPU pass through
 
->All information here are from this reddit article: <https://www.reddit.com/r/homelab/comments/b5xpua/the_ultimate_beginners_guide_to_gpu_passthrough/>.
+>All information here are from this reddit article: https://www.reddit.com/r/homelab/comments/b5xpua/the_ultimate_beginners_guide_to_gpu_passthrough.
 I wanted to keep a copy for myself here in case I want to create another VM with GPU pass through since this guide worked well for me.
 
 Ensure that you **IOMMU** enabled in your BIOS settings!
@@ -120,6 +120,6 @@ update-initramfs -u
 
 ### Sources
 
-- <https://pve.proxmox.com/wiki/PCI_Passthrough>
-- <https://www.reddit.com/r/homelab/comments/b5xpua/the_ultimate_beginners_guide_to_gpu_passthrough/>
-- <https://www.youtube.com/watch?v=S6jQx4AJlFw&t=870s>
+- https://pve.proxmox.com/wiki/PCI_Passthrough
+- https://www.reddit.com/r/homelab/comments/b5xpua/the_ultimate_beginners_guide_to_gpu_passthrough/
+- https://www.youtube.com/watch?v=S6jQx4AJlFw&t=870s
