@@ -1,13 +1,24 @@
 # https://geekscircuit.com/installing-zoraxy-reverse-proxy-your-gateway-to-efficient-web-routing/
-mkdir zoraxy
-cd zoraxy
-curl https://github.com/tobychui/zoraxy/releases/latest/download/zoraxy_linux_amd64 --output zoraxy_linux_amd64
-mv zoraxy_linux_amd64 zoraxy
+
+ZORAXY_FOLDER=zoraxy-repo
+if ! [ -d $ZORAXY_FOLDER ]; then
+  # git clone https://github.com/tobychui/zoraxy $ZORAXY_FOLDER
+  mkdir $ZORAXY_FOLDER
+fi
+
+cd $ZORAXY_FOLDER
+curl https://github.com/tobychui/zoraxy/releases/latest/download/zoraxy_linux_amd64 --output zoraxy
+
+# cd ./$ZORAXY_FOLDER/src
+# go mod tidy
+# go build
+# mv zoraxy_linux_amd64 zoraxy
 chmod +x zoraxy
 
 ZORAXY_DIR=$(pwd)
 ZORAXY_BIN="${ZORAXY_DIR}/zoraxy"
 echo "${ZORAXY_BIN} -port=:8000" > start.sh
+chmod +x start.sh
 
 echo """
 [Unit]
