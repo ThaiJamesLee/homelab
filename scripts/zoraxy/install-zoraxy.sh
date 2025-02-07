@@ -17,7 +17,10 @@ chmod +x zoraxy
 
 ZORAXY_DIR=$(pwd)
 ZORAXY_BIN="${ZORAXY_DIR}/zoraxy"
-echo "${ZORAXY_BIN} -port=:8000" > start.sh
+echo """
+#!/bin/bash
+${ZORAXY_BIN} -port=:8000
+""" > start.sh
 chmod +x start.sh
 
 echo """
